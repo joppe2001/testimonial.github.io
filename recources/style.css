@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    font-weight: 500;
+}
+
+body {
+    font-family: 'barlow semi condensed';
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories {
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 30%);
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "clifford clifford walters whittle" "harmon abrams abrams whittle";
+    gap: 30px;
+    margin-right: 200px;
+}
+
+img {
+    position: relative;
+    border-radius: 25px;
+    height: 25px;
+    top: 21px;
+}
+
+p {
+    color: hsl(0, 0%, 81%);
+    opacity: 0.7;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.18rem;
+    opacity: 0.93;
+}
+
+
+/* all the names with their placements */
+
+.inner-box {
+    padding: 13px;
+}
+
+.story {
+    padding: 0 5px;
+}
+
+
+/* clifford */
+
+.clifford {
+    /* position: relative; */
+    grid-area: clifford;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    border-radius: 10px;
+}
+
+.clifford-intro {
+    display: flex;
+}
+
+.clifford-verified {
+    line-height: 1px;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.clifford-verified p {
+    color: hsl(0, 0%, 81%);
+    opacity: 0.7;
+}
+
+
+/* walters */
+
+.walters {
+    grid-area: walters;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    color: white;
+}
+
+.walters-intro {
+    display: flex;
+}
+
+.walters-verified {
+    line-height: 1px;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.walters-verified p {
+    color: hsl(0, 0%, 81%);
+    opacity: 0.6;
+}
+
+
+/* harmon */
+
+.harmon {
+    grid-area: harmon;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.harmon p {
+    color: hsl(217, 19%, 35%);
+}
+
+.harmon-intro {
+    display: flex;
+}
+
+.harmon-verified {
+    line-height: 1px;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.harmon-verified p {
+    color: hsl(0, 0%, 81%);
+}
+
+
+/* abrams */
+
+.abrams {
+    grid-area: abrams;
+    border-radius: 10px;
+    color: white;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.abrams-intro {
+    display: flex;
+}
+
+.abrams-verified {
+    line-height: 1px;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* whittle */
+
+.whittle {
+    grid-area: whittle;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.whittle p {
+    color: hsl(217, 19%, 35%);
+}
+
+.whittle-intro {
+    display: flex;
+}
+
+.whittle-verified {
+    line-height: 1px;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.whittle-verified p {
+    color: hsl(0, 0%, 81%);
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 375px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .stories {
+        display: grid;
+        margin: 0 15px;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "clifford" "walters" "harmon" "abrams" "whittle";
+    }
+}
