@@ -18,7 +18,7 @@ body {
     height: 600px;
     display: grid;
     grid-template-columns: repeat(4, 30%);
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto;
     grid-template-areas: "clifford clifford walters whittle" "harmon abrams abrams whittle";
     gap: 30px;
     margin-right: 200px;
@@ -26,14 +26,15 @@ body {
 
 img {
     position: relative;
-    border-radius: 25px;
-    height: 25px;
+    border-radius: 50%;
+    height: 28px;
     top: 21px;
+    padding: 0 8px;
 }
 
 p {
     color: hsl(0, 0%, 81%);
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 h3 {
@@ -51,6 +52,7 @@ h3 {
 
 .story {
     padding: 0 5px;
+    /* padding: 20px; */
 }
 
 
@@ -62,6 +64,7 @@ h3 {
     background-color: hsl(263, 55%, 52%);
     color: white;
     border-radius: 10px;
+    padding: 11px;
 }
 
 .clifford-intro {
@@ -78,6 +81,7 @@ h3 {
 .clifford-verified p {
     color: hsl(0, 0%, 81%);
     opacity: 0.7;
+    font-size: 0.6rem;
 }
 
 
@@ -88,6 +92,7 @@ h3 {
     background-color: hsl(217, 19%, 35%);
     border-radius: 10px;
     color: white;
+    padding: 5px 20px;
 }
 
 .walters-intro {
@@ -104,6 +109,7 @@ h3 {
 .walters-verified p {
     color: hsl(0, 0%, 81%);
     opacity: 0.6;
+    font-size: 0.6rem;
 }
 
 
@@ -113,6 +119,7 @@ h3 {
     grid-area: harmon;
     border-radius: 10px;
     background-color: white;
+    padding-right: 28px;
 }
 
 .harmon p {
@@ -131,6 +138,7 @@ h3 {
 }
 
 .harmon-verified p {
+    font-size: 0.6rem;
     color: hsl(0, 0%, 81%);
 }
 
@@ -155,6 +163,10 @@ h3 {
     margin-top: 10px;
 }
 
+.abrams-verified p {
+    font-size: 0.6rem;
+}
+
 
 /* whittle */
 
@@ -162,6 +174,7 @@ h3 {
     grid-area: whittle;
     border-radius: 10px;
     background-color: white;
+    padding: 0 25px
 }
 
 .whittle p {
@@ -180,7 +193,12 @@ h3 {
 }
 
 .whittle-verified p {
+    font-size: 0.6rem;
     color: hsl(0, 0%, 81%);
+}
+
+#bottom-p {
+    font-size: 0.85rem;
 }
 
 
