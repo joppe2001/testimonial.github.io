@@ -204,7 +204,7 @@ h3 {
 
 /* media queries */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width:375px) {
     main {
         display: flex;
         justify-content: center;
